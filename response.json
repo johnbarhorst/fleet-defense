@@ -1,0 +1,5172 @@
+[
+  {
+    "parent_id": null,
+    "name": "Workplace Injuries - MDV",
+    "code": "MDV_INJ",
+    "templateCode": "tmpl-l-ddt",
+    "countryCode": "US",
+    "languageCode": "en",
+    "languageDirection": "ltr",
+    "scoringType": "styp-ddt",
+    "variations": [
+      {
+        "code": "vari-measurement-system-imperial",
+        "name": "Imperial"
+      },
+      {
+        "code": "vari-rule-of-the-road-right-hand-traffic",
+        "name": "Right-hand Traffic"
+      }
+    ],
+    "modelAttributes": [
+      {
+        "name": "Vehicle Type",
+        "code": "attr-l-vehicle-type",
+        "value": "cat-l-vehicle-type-medium-duty-vehicle"
+      }
+    ],
+    "pages": [
+      {
+        "templateName": "Title Screen",
+        "templateCode": "tmpl-p-title-screen",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 0,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6955
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-dictionary-terms",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-term-text",
+                "value": "Continue"
+              },
+              {
+                "code": "attr-c-selector-text",
+                "value": "{$dt-continue}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-fullscreen-image-and-sub-heading",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Workplace Injuries"
+              },
+              {
+                "code": "attr-c-sub-heading-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-image-alt-text",
+                "value": "Workplace Injuries"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/global/intro/img01.jpg"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-reverse-heading",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "templateName": "Bandwidth",
+        "templateCode": "tmpl-p-bandwidth",
+        "lockTypeCode": "ltyp-func-int",
+        "lockTypeDuration": 5,
+        "order": 1,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 1
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 1
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6990
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-bandwidth-settings",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Bandwidth Detection"
+              },
+              {
+                "code": "attr-c-loading-text",
+                "value": "test in progress"
+              },
+              {
+                "code": "attr-c-loaded-text",
+                "value": "Complete"
+              },
+              {
+                "code": "attr-c-percent-text",
+                "value": "%"
+              },
+              {
+                "code": "attr-c-bandwidth-text",
+                "value": "{$megabytes}"
+              },
+              {
+                "code": "attr-c-unit-text",
+                "value": "{$megabytes} megabytes per second"
+              },
+              {
+                "code": "attr-c-test-again-text",
+                "value": "test again"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-format",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-quality-text",
+                "value": "480"
+              },
+              {
+                "code": "attr-c-threshold-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-name-text",
+                "value": "Low Bandwidth"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "Lower Quality"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-enabled",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-format",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-quality-text",
+                "value": "720"
+              },
+              {
+                "code": "attr-c-threshold-text",
+                "value": "1.25"
+              },
+              {
+                "code": "attr-c-name-text",
+                "value": "Medium Bandwidth"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "Standard Quality"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-enabled",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-format",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-quality-text",
+                "value": "1080"
+              },
+              {
+                "code": "attr-c-threshold-text",
+                "value": "5"
+              },
+              {
+                "code": "attr-c-name-text",
+                "value": "High Bandwidth"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "Higher Quality"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-enabled",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "templateName": "Slideshow",
+        "templateCode": "tmpl-p-slideshow",
+        "lockTypeCode": "ltyp-time-char",
+        "lockTypeDuration": 30,
+        "order": 2,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 1
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 1
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6956
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-image-with-heading-and-paragraph",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Workplace Injuries"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/inj/global/slides/img01.svg"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "<p>\n\tIn this module, participants will learn:</p>\n<ol>\n\t<li>\n\t\tWhich workplace injuries are the most common for drivers.</li>\n\t<li>\n\t\tHow these injuries happen.</li>\n\t<li>\n\t\tTechniques to avoid these injuries.</li>\n</ol>\n"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-image-with-heading-and-paragraph",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "A Common Problem"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/inj/global/slides/img02.svg"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "<p>\n\tEvery year, thousands of workdays are lost due to employee injuries. Workplace injuries are common among trade, transportation and utilities workers. While some workplace injuries are short-term, others may lead to permanent disability or death.</p>\n"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-image-with-heading-and-paragraph",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Harmful Falls"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/inj/global/slides/img03.svg"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "<p>\n\tFalls injure many drivers each year. There are two basic types: same-level falls and elevated falls. Generally caused by slips or trips, same-level falls are more common, but elevated falls often cause more severe injuries. Factors that can lead to these injuries include wearing inappropriate footwear, being distracted, carrying materials that obstruct vision, and carelessly entering or exiting vehicles.</p>\n"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-image-with-heading-and-paragraph",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Sprains and Strains"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/inj/global/slides/img04.svg"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "<p>\n\tMany professional drivers experience sprains or muscle strains, and slips, trips and falls are not the only causes. These injuries can occur when long periods of sitting are followed by short bursts of activity, such as covering a load with a tarp, fueling a truck or manually washing a windshield. Sprains and strains may also happen when drivers climb in or out of their vehicles. These injuries can put a driver out of work for an extended period of time.</p>\n"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-image-with-heading-and-paragraph",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Back Injuries"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/inj/global/slides/img05.svg"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "<p>\n\tBack pain is another concern for drivers. Many drivers sit for long periods of time in a rounded slouch, which can cause back pain. Some drivers are also required to handle heavy objects. Poor posture and poor lifting techniques can lead to painful back injuries.</p>\n"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-image-with-heading-and-paragraph",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Prevent Workplace Injuries"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/global/slides/img06.svg"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "<p>\n\tMany workplace injuries are avoidable if you take the appropriate precautions. Here are some tips to help you avoid common injuries:</p>\n<ul>\n\t<li>\n\t\tPay attention to your surroundings.</li>\n\t<li>\n\t\tWear slip-resistant footwear.</li>\n\t<li>\n\t\tMaintain proper posture while driving.</li>\n\t<li>\n\t\tUse safe lifting techniques when handling heavy loads.</li>\n\t<li>\n\t\tBe careful and aware when entering or exiting vehicles.</li>\n</ul>\n"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Slideshow",
+        "templateCode": "tmpl-p-slideshow",
+        "lockTypeCode": "ltyp-time-char",
+        "lockTypeDuration": 30,
+        "order": 3,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 1
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 1
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6957
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-image-with-heading-and-paragraph",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Occupational Fatalities"
+              },
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/inj/global/stats/img01.svg"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "Worldwide, more than 900 people die every day from work-related injuries."
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Video",
+        "templateCode": "tmpl-p-video",
+        "lockTypeCode": "ltyp-video-complete",
+        "lockTypeDuration": 50,
+        "order": 4,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 1
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 1
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6958
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-video-with-heading-and-paragraph",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-image-url-path",
+                "value": "/media/courses/ddt/global/intro/img01.jpg"
+              },
+              {
+                "code": "attr-c-video-url-path",
+                "value": "/media/courses/ddt/inj/mdv/us/en/videos/default.mp4"
+              },
+              {
+                "code": "attr-c-video-480-url-path",
+                "value": "/media/courses/ddt/inj/mdv/us/en/videos/480.mp4"
+              },
+              {
+                "code": "attr-c-video-720-url-path",
+                "value": "/media/courses/ddt/inj/mdv/us/en/videos/720.mp4"
+              },
+              {
+                "code": "attr-c-video-1080-url-path",
+                "value": "/media/courses/ddt/inj/mdv/us/en/videos/1080.mp4"
+              },
+              {
+                "code": "attr-c-heading-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-description-text-long",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-controls",
+                "value": 1
+              },
+              {
+                "code": "attr-c-fullscreen",
+                "value": 0
+              },
+              {
+                "code": "attr-c-pauseable",
+                "value": 1
+              },
+              {
+                "code": "attr-c-preload",
+                "value": 0
+              },
+              {
+                "code": "attr-c-timeline",
+                "value": 1
+              },
+              {
+                "code": "attr-c-theme",
+                "value": "cat-c-video-theme-assessment"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 5,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6959
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following statements is true?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 1
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries are always short-term"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workdays are lost each year due to employee injuries"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries are never a concern for professional drivers"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workdays are never lost due to employee injuries"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries do not occur within the transportation industry"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 6,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6960
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following statements is true?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 2
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries can result in permanent disability or death"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries do not occur within the utilities industry"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries are the concern of employers only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "sprains and muscle strains are never avoidable"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "climbing in or out of a vehicle cannot cause injuries"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 7,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6961
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following can lead to injuries?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 3
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "lifting heavy objects improperly"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "using the steering wheel as support when exiting a vehicle"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "jumping out of a vehicle"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and C only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A, B and C"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 8,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6962
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following statements is true?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 4
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "elevated falls always result in exactly the same injuries as same-level falls"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "elevated falls always result in less serious injuries than same-level falls"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "elevated falls often cause more severe injuries than same-level falls"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "elevated falls are the only type of fall that can injure someone"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "elevated falls are the most common type of fall every year"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 9,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6963
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following factors can lead to a fall at work?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 5
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "wearing inappropriate footwear"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "being distracted"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "carrying loads that obstruct vision"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "carelessly entering or exiting vehicles"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all of the above are correct"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 10,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6964
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "When are drivers especially at risk of sprains and strains?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 6
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "when they maintain proper posture while driving"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "when they wear slip-resistant footwear"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "when they are involved in short bursts of activity after long periods of sitting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "when they refrain from reaching for objects too far from the driver's seat"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "when they pay attention to their surroundings"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 11,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6965
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following may cause muscle strains?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 7
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "slipping or tripping"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "fueling a truck"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "manually washing the windshield"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all of the above are correct"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "none of the above are correct"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 12,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6966
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following statements about sprains and strains is true?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 8
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "they cannot put a driver out of work for more than 3 days"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "they can happen when drivers climb in or out of their vehicles"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "most are caused by drivers relaxing their arms and feet"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "most help drivers maintain a heightened sense of awareness while changing lanes"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all of the above statements are true"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 13,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6967
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following is a cause of back injuries?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 9
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "using poor lifting techniques"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "maintaining proper posture"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "sitting for long periods of time in a rounded slouch"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and B only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and C only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 14,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6968
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "According to the module, what can cause back injuries when drivers handle heavy objects?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 10
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "overthinking the process of heavy lifting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "using mechanical assistance whenever possible"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "using poor lifting techniques"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "ensuring a good grip on the object before lifting it"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "doing some stretches before lifting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 15,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6969
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following statements is true?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 11
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all workplace injuries are the fault of employers"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all workplace injuries are the fault of employees"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "frequent workplace injuries are an acceptable part of business"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries can often be avoided by taking appropriate precautions"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "workplace injuries are always unavoidable"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 16,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6970
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "What does the \"three-point rule\" advise?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 12
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should maintain three points of contact with any load they carry"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should use a three-point checklist before leaving a parking spot"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should maintain three points of contact with the vehicle when entering or exiting it"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should use the steering wheel, door, or door handle for support when exiting a vehicle"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should count to three to determine their stopping distance"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 17,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6971
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "What does using the \"three-point rule\" do for drivers entering vehicles?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 13
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "it unnecessarily slows them down"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "it increases their liability in a fall"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "it eliminates the company's liability for their safety"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "it increases their stability and reduces the risk of a fall"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "it increases their risk of injury in a fall"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 18,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6972
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "According to the module, which of the following is safe for a driver to grasp when entering a vehicle?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 14
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "a grab bar"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "the steering wheel"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "a door or door handle"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and B only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A, B and C"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 19,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6973
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "What should a driver do before exiting a vehicle?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 15
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "examine the ground for hazards"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "determine a good angle for jumping down"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "prepare to use the steering wheel for support while climbing down"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and B only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A, B and C"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 20,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6974
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following options is the safest way to exit a large truck?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 16
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "by facing away from the vehicle and stepping forward with both hands free"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "by facing the vehicle and stepping down backward while holding a fixed object"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "by using the steering wheel for support while climbing down"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "by using the door for support while jumping out"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "by jumping down"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 21,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6975
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following statements about exiting a large truck is true?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 17
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should climb down from the vehicle with their hands full"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should carry what they can and toss heavier objects to the ground before exiting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should rest for an hour before climbing down with their hands full"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "drivers should not climb down from the vehicle with their hands full"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all of the above statements are true"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 22,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6976
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "What should drivers do with items they need to take with them when they exit a large truck?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 18
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "carry the items with both hands when exiting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "put the items on the floor of the cab and pick them up after exiting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "throw items out of the truck and retrieve them from the ground after exiting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "arrange items into a sturdy stack and carry the stack with both hands when exiting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "hold the items with one hand and jump down to exit the vehicle"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 23,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6977
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following can cause workplace injuries?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 19
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "elevated and same-level falls"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "long periods of sitting in a rounded slouch"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "improper lifting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "short bursts of activity after prolonged periods of sitting"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all of the above are correct"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 24,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6978
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following is safe advice for handling heavy objects?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 20
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "always lift objects manually even when mechanical assistance is available"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "use mechanical assistance whenever possible"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "keep the object as far as possible from your body when carrying it"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "lift objects while you twist your back"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "jerk the load several times while you lift"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 25,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6979
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "What should you avoid when handling heavy objects?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 21
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "lifting objects that obscure your vision"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "keeping objects as close as possible to your body"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "lifting items from the floor or from above shoulder level"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and C only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A, B and C"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 26,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6980
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following should help drivers avoid injuries while handling heavy objects?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 22
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "having a stable footing and a secure grip"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "carrying heavy objects as far from the body as possible"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "taking the shortest route without evaluating it for hazards"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "lifting everything at one time to complete the task sooner"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and D only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 27,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6981
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following is a common workplace injury for drivers?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 23
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "back injuries"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "sprains"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "muscle strains"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "B and C only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A, B and C"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 28,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6982
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "Which of the following statements is true?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 24
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "lifting objects manually is always the best option"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "it is safer to lift objects from the floor than from waist level"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "you should lift objects smoothly without twisting your back"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "improper footwear reduces risks to feet from impacts "
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "all of the above statements are true"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 29,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6983
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "How might proper footwear reduce the chances of workplace injuries?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 25
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "slip-resistant soles help reduce slips and falls"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "A"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "sturdy foot protection reduces risks to feet from impacts and strains"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "B"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "matching colors establish uniformity among employees"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "C"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and B only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "100"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "D"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "A and C only"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "0"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "E"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 30,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6984
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 26
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 31,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6985
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 27
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 32,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6986
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 28
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 33,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6987
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 29
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Question",
+        "templateCode": "tmpl-p-question",
+        "lockTypeCode": "ltyp-none",
+        "lockTypeDuration": 5,
+        "order": 34,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 0
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6988
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-question",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-position",
+                "value": 30
+              },
+              {
+                "code": "attr-c-randomize-answers",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 1,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 2,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 3,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 4,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          },
+          {
+            "code": "tmpl-c-answer",
+            "order": 5,
+            "translations": [
+              {
+                "code": "attr-c-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-score-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-label-text",
+                "value": "{ignore}"
+              }
+            ],
+            "settings": []
+          }
+        ]
+      },
+      {
+        "templateName": "Results",
+        "templateCode": "tmpl-p-results",
+        "lockTypeCode": "ltyp-time-char",
+        "lockTypeDuration": 30,
+        "order": 35,
+        "modelAttributes": [
+          {
+            "name": "Active",
+            "code": "attr-p-active",
+            "value": 1
+          },
+          {
+            "name": "Display Innav",
+            "code": "attr-p-display-innav",
+            "value": 1
+          },
+          {
+            "name": "Display Main",
+            "code": "attr-p-display-main",
+            "value": 0
+          },
+          {
+            "name": "Display Next",
+            "code": "attr-p-display-next",
+            "value": 1
+          },
+          {
+            "name": "Task Id",
+            "code": "attr-p-task-id",
+            "value": 6989
+          }
+        ],
+        "contents": [
+          {
+            "code": "tmpl-c-results-settings",
+            "order": 0,
+            "translations": [
+              {
+                "code": "attr-c-heading-text",
+                "value": "Score Breakdown"
+              },
+              {
+                "code": "attr-c-sub-heading-text",
+                "value": "{ignore}"
+              },
+              {
+                "code": "attr-c-total-text",
+                "value": "Status:"
+              },
+              {
+                "code": "attr-c-pass-text",
+                "value": "Complete"
+              },
+              {
+                "code": "attr-c-fail-text",
+                "value": "Incomplete"
+              },
+              {
+                "code": "attr-c-retry-text",
+                "value": "Try again?"
+              }
+            ],
+            "settings": [
+              {
+                "code": "attr-c-allow-retry",
+                "value": 1
+              },
+              {
+                "code": "attr-c-require-pass",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
